@@ -509,6 +509,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 
   .hero__inner {
     height: auto;
+    padding: 0 20px;
   }
 
   .hero__content {
@@ -518,43 +519,49 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 
   .hero h1 {
     font-size: 2.5rem;
+    line-height: 1.12;
     margin-bottom: 28px;
   }
 
   .hero__quote {
     font-size: 1.05rem;
+    line-height: 1.5;
     margin-bottom: 24px;
   }
 
   .hero__content > p:not(.hero__quote):not(.hero__button) {
     font-size: .88rem;
+    line-height: 1.55;
   }
 
-  .hero__deer-image {
-    width: 260px;
-    right: -25px;
-    top: 330px;
+  .hero__button {
+    margin-top: 28px;
   }
 
-  .hero__line-main {
-    bottom: 120px;
+    .hero__deer-image {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    right: 5px;
+    top: auto;
+    bottom: 145px;
+    z-index: 2;
   }
 
-  .hero__line-small {
-    top: 390px;
-    right: 0;
-    width: 130px;
-  }
-
-  .hero__line-waves {
-    right: 8%;
-    bottom: 45px;
-    width: 190px;
+    .hero__line-main {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    z-index: 1;
   }
 
   .hero__desktop-break {
     display: none;
   }
+
 }
 
 /* Value/section cards grid (mockup: 01-07 colored cards) */
@@ -986,9 +993,6 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 
 @media (max-width: 720px) {
   .section { padding: 36px 0; }
-  .hero__inner { padding: 32px 0 24px; gap: 20px; }
-  .hero__quote { font-size: 1.12rem; }
-  h1 { font-size: 2rem; }
   h2 { font-size: 1.45rem; }
   .card { padding: 20px 18px; }
   .card--wide { flex-direction: column; align-items: flex-start; }
