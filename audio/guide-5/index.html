@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Чусовой — аудиогид</title>
+
+    <meta
+        name="description"
+        content="Аудиогид по городу Чусовому и его истории."
+    >
+
+    <link
+        rel="canonical"
+        href="https://smiiiira.github.io/perm2/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:site_name"
+        content="Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:title"
+        content="Чусовой — аудиогид"
+    >
+
+    <meta
+        property="og:description"
+        content="Аудиогид по городу Чусовому и его истории."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/main.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="page-audio">
+
+<header class="site-header">
+
+    <div class="container site-header__inner">
+
+        <a
+            href="../../"
+            class="logo"
+            aria-label="Digital-Пульс Прикамья — на главную"
+        >
+
+            <img
+                class="logo__icon"
+                src="../../img/logo.svg"
+                alt=""
+            >
+
+            <span class="logo__text">
+
+                <span class="logo__name">
+                    DIGITAL-ПУЛЬС
+                </span>
+
+                <span class="logo__sub">
+                    ПРИКАМЬЯ
+                </span>
+
+            </span>
+
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            Меню
+        </button>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+        >
+
+            <a href="../../map/">
+                КАРТА И АУДИОГИДЫ
+            </a>
+
+            <a href="../../herbs/">
+                ТРАВЫ
+            </a>
+
+            <a href="../../people/">
+                ЛИЧНОСТИ
+            </a>
+
+            <a href="../../gallery/photos/">
+                ГАЛЕРЕЯ
+            </a>
+
+            <a href="../../about/">
+                О ПРОЕКТЕ
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section
+    class="section"
+    style="padding-top:24px"
+>
+
+    <div
+        class="container"
+        style="max-width:860px"
+    >
+
+        <h1>
+            Чусовой
+        </h1>
+
+        <p class="lead">
+            Аудиогид по городу Чусовому и его истории.
+        </p>
+
+
+        <div
+            class="player"
+            style="margin-top:24px"
+        >
+
+            <audio
+                id="audio-player"
+                src="../../media/audio/guide-5.mp3"
+                preload="metadata"
+                data-slug="guide-5"
+            ></audio>
+
+            <div class="player__row">
+
+                <button
+                    class="player__btn"
+                    id="player-toggle"
+                    type="button"
+                >
+                    ▶
+                </button>
+
+                <span
+                    class="player__time"
+                    id="player-time"
+                >
+                    0:00 / 0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="player-seek"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    style="flex:1;min-width:160px"
+                >
+
+            </div>
+
+
+            <div
+                class="player__row"
+                style="margin-top:12px"
+            >
+
+                <label>🔊</label>
+
+                <input
+                    type="range"
+                    id="player-volume"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                    style="width:110px"
+                >
+
+                <div class="player__speeds">
+
+                    <button
+                        class="player__speed is-active"
+                        type="button"
+                        data-speed="1"
+                    >
+                        1×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.25"
+                    >
+                        1.25×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.5"
+                    >
+                        1.5×
+                    </button>
+
+                </div>
+
+                <a
+                    class="btn btn--terracotta btn--sm"
+                    href="../../media/audio/guide-5.mp3"
+                    download
+                >
+                    Скачать (MP3 128 kbps)
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="share"
+            role="group"
+            aria-label="Поделиться"
+        >
+
+            <a
+                class="share__btn share__btn--vk"
+                href="https://vk.com/share.php?url=https://smiiiira.github.io/perm2/audio/guide-5/"
+                target="_blank"
+                rel="noopener"
+            >
+                ВКонтакте
+            </a>
+
+            <a
+                class="share__btn share__btn--tg"
+                href="https://t.me/share/url?url=https://smiiiira.github.io/perm2/audio/guide-5/"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram
+            </a>
+
+            <button
+                class="share__btn share__btn--copy"
+                type="button"
+                data-share="copy"
+                data-url="https://smiiiira.github.io/perm2/audio/guide-5/"
+            >
+                Скопировать ссылку
+            </button>
+
+        </div>
+
+
+        <details class="transcript detail">
+
+            <summary>
+                Текст аудиогида
+            </summary>
+
+            <div
+                style="margin-top:12px;white-space:pre-line"
+            >
+                Давайте отправимся на восток Пермского края в город Чусовой. Это место, где начиналась история освоения Сибири, где кипела промышленная жизнь и где рождались олимпийские чемпионы. Чусовой — город с характером, и сейчас вы поймёте почему.
+
+                Задолго до появления здесь русских поселенцев, территория современного Чусового была населена предками народов манси. Они вели активную хозяйственную и торговую деятельность в междуречье рек Усьвы, Вильвы и Чусовой. Кстати, о названии. «Чусовая», по одной из версий, происходит от тюркских и тибетских слов, означающих «река, вода». Звучит красиво и загадочно, правда?
+
+                Всё изменилось в 1558-1568 годах, когда царь Иван Грозный пожаловал земли по реке Чусовой купцам и промышленникам Строгановым. В 1568 году выше устья реки был основан Нижний Чусовской городок — деревянная крепость. Описание 1623 года сохранило нам её облик: «Городок Чусовой деревянной, рубленной, а у него трои ворот да четыре башни наугольных глухих». Именно с этой крепостью связан легендарный поход Ермака в Сибирь. В 1581 году казачья дружина Ермака Тимофеевича отправилась в свой знаменитый поход из Нижне-Чусовских городков. Считается, что именно здесь Ермак получил благословение на завоевание Сибири. По одной из легенд, он с дружиной провёл на Чусовой «два года и месяца два». Кстати, место отправления Ермака сейчас затоплено — воды Камского водохранилища скрыли древние берега.
+
+                Первое известное поселение на территории современного Чусового упоминается в переписи 1624 года — это село Камасино. Но настоящий рывок случился в конце XIX века. В 1874 году построена станция Чусовская Уральской горнозаводской железной дороги. А 27 февраля 1878 года открылось движение от Перми до станции Чусовская. Первый поезд жители увидели именно в тот день — эту дату теперь считают днём рождения города.
+
+                В 1879 году Франко-Русское Уральское общество, основанное князем Сергеем Голицыным и французским предпринимателем Шарлем Барруеном, запустило Чусовской металлургический завод. Это было одно из самых современных предприятий на Урале! Завод дал городу жизнь, работу и мощный импульс развития.
+
+                В 1899 году Чусовой посетил знаменитый учёный Дмитрий Иванович Менделеев. Он путешествовал по Уралу с экспедицией, изучая промышленность края. А в 1929 году в Чусовском районе геологи под руководством профессора Преображенского обнаружили признаки нефти. Это было первое на Урале нефтяное месторождение. Скважина, из которой добыли первую нефть, получила милое название «Бабушка пермской нефти».
+
+                20 июня 1933 года рабочий посёлок Чусовая официально стал городом Чусовым. А в годы Великой Отечественной войны местный завод выпускал броню для танков Т-60 и Т-34, головки снарядов для «Катюш», корпуса осколочных снарядов.
+
+                С 1945 по 1962 год в Чусовом жил и работал писатель Виктор Астафьев, которого мы помним по рассказу «Васюткино озеро» и роману «Прокляты и убиты». Работая вахтёром в колбасном цехе, Виктор Петрович за одну ночь написал свой первый рассказ «Гражданский человек». Так началась писательская карьера Астафьева. В 2002 году в Чусовом открыли Литературный музей, посвящённый жизни и творчеству Виктора Петровича.
+
+                В 1954 году у подножия горы Арининой открылась спортивная школа «Огонёк». Её основал Леонард Дмитриевич Постников — человек-легенда, Заслуженный работник культуры РСФСР, Почётный гражданин Пермского края и Чусового. Школа воспитала олимпийских призёров по фристайлу Сергея Шуплецова и Александра Смышляева, а также саночника Альберта Демченко. Спортивная слава Чусового прогремела на весь мир!
+
+                В 1964 году открыли автомобильный мост через Чусовую и началось строительство «Нового города» на левом берегу. А в 1981 году Леонард Постников, заслуженный работник культуры РСФСР, руководитель спортивной школы олимпийского резерва «Огонек», основал Парк истории реки Чусовой. Сердце парка — музей Ермака, расположенный в часовне XIX века. Это единственный в Пермском крае музей, посвящённый походу Ермака.
+
+                Чусовой — это город, где всё переплелось: древние манси и поход Ермака, первая уральская нефть и олимпийские медали. Настоящее место силы для тех, кто хочет прикоснуться к истории.
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<script
+    src="../../js/player.js"
+    defer
+></script>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__grid">
+
+            <div>
+
+                <h3 class="heading">
+                    Digital-Пульс Прикамья
+                </h3>
+
+                <p>
+                    Цифровой туристический портал экспедиции:
+                    этномедицина, маршруты, история и аудиогиды
+                    Пермского края.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Разделы
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../../map/">
+                            Карта и аудиогиды
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../herbs/">
+                            Каталог трав
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../people/">
+                            Личности
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../gallery/photos/">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../about/">
+                            О проекте
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Контакты
+                </h3>
+
+                <p>
+                    Министерство туризма Пермского края
+                </p>
+
+                <p>
+                    <a href="mailto:info@digitalpuls.example">
+                        info@digitalpuls.example
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            © 2026 Digital-Пульс Прикамья ·
+
+            <a href="../../privacy/">
+                Политика конфиденциальности
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="../../js/main.js"
+    defer
+></script>
+
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Пермский краеведческий музей — аудиогид</title>
+
+    <meta
+        name="description"
+        content="Аудиогид по Пермскому краеведческому музею — старейшему научному учреждению Перми."
+    >
+
+    <link
+        rel="canonical"
+        href="https://smiiiira.github.io/perm2/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:site_name"
+        content="Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:title"
+        content="Пермский краеведческий музей — аудиогид"
+    >
+
+    <meta
+        property="og:description"
+        content="Аудиогид по Пермскому краеведческому музею — старейшему научному учреждению Перми."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/main.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="page-audio">
+
+<header class="site-header">
+
+    <div class="container site-header__inner">
+
+        <a
+            href="../../"
+            class="logo"
+            aria-label="Digital-Пульс Прикамья — на главную"
+        >
+
+            <img
+                class="logo__icon"
+                src="../../img/logo.svg"
+                alt=""
+            >
+
+            <span class="logo__text">
+
+                <span class="logo__name">
+                    DIGITAL-ПУЛЬС
+                </span>
+
+                <span class="logo__sub">
+                    ПРИКАМЬЯ
+                </span>
+
+            </span>
+
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            Меню
+        </button>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+        >
+
+            <a href="../../map/">
+                КАРТА И АУДИОГИДЫ
+            </a>
+
+            <a href="../../herbs/">
+                ТРАВЫ
+            </a>
+
+            <a href="../../people/">
+                ЛИЧНОСТИ
+            </a>
+
+            <a href="../../gallery/photos/">
+                ГАЛЕРЕЯ
+            </a>
+
+            <a href="../../about/">
+                О ПРОЕКТЕ
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section
+    class="section"
+    style="padding-top:24px"
+>
+
+    <div
+        class="container"
+        style="max-width:860px"
+    >
+
+        <h1>
+            Пермский краеведческий музей
+        </h1>
+
+        <p class="lead">
+            Аудиогид по Пермскому краеведческому музею — старейшему научному учреждению Перми.
+        </p>
+
+
+        <div
+            class="player"
+            style="margin-top:24px"
+        >
+
+            <audio
+                id="audio-player"
+                src="../../media/audio/guide-11.mp3"
+                preload="metadata"
+                data-slug="guide-11"
+            ></audio>
+
+            <div class="player__row">
+
+                <button
+                    class="player__btn"
+                    id="player-toggle"
+                    type="button"
+                >
+                    ▶
+                </button>
+
+                <span
+                    class="player__time"
+                    id="player-time"
+                >
+                    0:00 / 0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="player-seek"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    style="flex:1;min-width:160px"
+                >
+
+            </div>
+
+
+            <div
+                class="player__row"
+                style="margin-top:12px"
+            >
+
+                <label>🔊</label>
+
+                <input
+                    type="range"
+                    id="player-volume"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                    style="width:110px"
+                >
+
+                <div class="player__speeds">
+
+                    <button
+                        class="player__speed is-active"
+                        type="button"
+                        data-speed="1"
+                    >
+                        1×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.25"
+                    >
+                        1.25×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.5"
+                    >
+                        1.5×
+                    </button>
+
+                </div>
+
+                <a
+                    class="btn btn--terracotta btn--sm"
+                    href="../../media/audio/guide-11.mp3"
+                    download
+                >
+                    Скачать (MP3 128 kbps)
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="share"
+            role="group"
+            aria-label="Поделиться"
+        >
+
+            <a
+                class="share__btn share__btn--vk"
+                href="https://vk.com/share.php?url=https://smiiiira.github.io/perm2/audio/guide-11/"
+                target="_blank"
+                rel="noopener"
+            >
+                ВКонтакте
+            </a>
+
+            <a
+                class="share__btn share__btn--tg"
+                href="https://t.me/share/url?url=https://smiiiira.github.io/perm2/audio/guide-11/"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram
+            </a>
+
+            <button
+                class="share__btn share__btn--copy"
+                type="button"
+                data-share="copy"
+                data-url="https://smiiiira.github.io/perm2/audio/guide-11/"
+            >
+                Скопировать ссылку
+            </button>
+
+        </div>
+
+
+        <details class="transcript detail">
+
+            <summary>
+                Текст аудиогида
+            </summary>
+
+            <div
+                style="margin-top:12px;white-space:pre-line"
+            >
+                Мы с вами у Пермского краеведческого музея — старейшего научного учреждения города, которое прошло путь от скромного кружка энтузиастов до огромной музейной сети.
+
+                Всё началось 15 ноября 1890 года, когда состоялось первое заседание Пермской комиссии Уральского общества любителей естествознания. На нём приняли решение о создании первого в Перми научного учреждения. И вот какой удивительный факт: основатели музея — политические ссыльные. Четверо из семи человек на первом заседании были железнодорожниками, и все находились под гласным надзором полиции за участие в народнических организациях. Среди первых членов комиссии — Фёдор Демиш, организатор народнического кружка в Кишинёве, Василий Казаков, основатель самой крупной народнической организации в Мотовилихе, и Иван Остроумов, ставший первым историком музея. А первым секретарём комиссии назначили революционера-народник, находившегося также под надзором полиции, Александра Криль. Вот так люди, лишённые свободы, создавали в Перми свободу научного знания.
+
+                25 января 1894 года музей открылся для публики в здании по улице Покровской, 38. В том же году прошла первая археологическая выставка «Древности Пермского края» с коллекцией Теплоуховых — той самой знаменитой коллекцией, о которой мы уже говорили. А в 1896 году начались раскопки Гляденовского костища под руководством Николая Никифоровича Новокрещенных — первого хранителя библиотеки музея. Найденные предметы положили начало археологической коллекции. Пермская земля начала открывать свои тайны.
+
+                В 1901 году утвердили Устав нового общества — Пермского научно-промышленного музея, ставшего преемником комиссии. Первым председателем Совета избрали Павла Никифоровича Серебренникова — впоследствии первого почётного члена музея. А ещё в музее проводили бесплатные общеобразовательные курсы. Лекции известного психолога Петра Каптерева собирали столько слушателей, что выступления переносили во двор музея, где люди около полутора часов слушали доктора стоя — вместе с губернатором. Вот это тяга к знаниям!
+
+                К 1913 году музей стал самым посещаемым на Урале: через него проходило более пятидесяти тысяч человек в год. А в 1916 году, с открытием Пермского университета, в музее появились новые научные силы.
+
+                В 1919 году музей стал государственным. А в 1927 году в его коллекции появились кости мамонта весом более трёхсот двадцати килограммов, найденные по наводке Верещагинского исполкома. Музей продолжал расти.
+
+                В 1928 году музей посетил нарком просвещения Анатолий Луначарский. Он оставил такую запись: «Достопримечательностью Перми является его музей… Он велик, размещается в 50 залах. Его музейные работники проявляют необыкновенную энергию, и уже к ранее имевшимся значительным коллекциям постоянно прибавляют новые».
+
+                С 1931 по 2007 год основная коллекция размещалась в здании бывшего Архиерейского дома. А в 2007 году главное здание переехало в Дом Мешкова на Монастырской улице, 11. Это памятник архитектуры конца XIX века в стиле модерн с элементами неоклассицизма. Дом построен в 1889 году архитектором Александром Турчевичем для известного пермского купца и пароходчика Николая Васильевича Мешкова. Получилось красивейшее здание с видом на Каму.
+
+                В 2025 году музей отмечает 135-летие. Сегодня в его фондах хранится более 628 000 единиц хранения! А сам Пермский краеведческий музей — это целая сеть из 10-11 филиалов: 6 расположены в Перми, а 4 — в Пермском крае. От скромного кружка ссыльных до огромной музейной империи — вот это путь. Так что если хотите изучить Пермь, начните с краеведческого музея. Здесь всё: от костей мамонта до купеческих интерьеров, от древних археологических находок до современной истории. Это место, где прошлое встречается с настоящим, а знания становятся доступными каждому.
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
+
+<script
+    src="../../js/player.js"
+    defer
+></script>
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__grid">
+
+            <div>
+
+                <h3 class="heading">
+                    Digital-Пульс Прикамья
+                </h3>
+
+                <p>
+                    Цифровой туристический портал экспедиции:
+                    этномедицина, маршруты, история и аудиогиды
+                    Пермского края.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Разделы
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../../map/">
+                            Карта и аудиогиды
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../herbs/">
+                            Каталог трав
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../people/">
+                            Личности
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../gallery/photos/">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../about/">
+                            О проекте
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Контакты
+                </h3>
+
+                <p>
+                    Министерство туризма Пермского края
+                </p>
+
+                <p>
+                    <a href="mailto:info@digitalpuls.example">
+                        info@digitalpuls.example
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            © 2026 Digital-Пульс Прикамья ·
+
+            <a href="../../privacy/">
+                Политика конфиденциальности
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script
+    src="../../js/main.js"
+    defer
+></script>
+
+</body>
+
+</html>

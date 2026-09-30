@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Г. Кудымкар — аудиогид</title>
+
+    <meta
+        name="description"
+        content="Аудиогид по Кудымкару: история города, Кудымкарское городище, легенда о Кудым-Оше и исторические памятники."
+    >
+
+    <link
+        rel="canonical"
+        href="https://smiiiira.github.io/perm/audio/guide-1/"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:title"
+        content="Г. Кудымкар — аудиогид"
+    >
+
+    <meta
+        property="og:description"
+        content="Аудиогид по Кудымкару: история города, Кудымкарское городище, легенда о Кудым-Оше и исторические памятники."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/main.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="page-audio">
+
+<header class="site-header">
+
+    <div class="container site-header__inner">
+
+        <a
+            href="../../"
+            class="logo"
+            aria-label="Digital-Пульс Прикамья — на главную"
+        >
+
+            <img
+                class="logo__icon"
+                src="../../img/logo.svg"
+                alt=""
+            >
+
+            <span class="logo__text">
+
+                <span class="logo__name">
+                    DIGITAL-ПУЛЬС
+                </span>
+
+                <span class="logo__sub">
+                    ПРИКАМЬЯ
+                </span>
+
+            </span>
+
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            Меню
+        </button>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+        >
+
+            <a href="../../map/">
+                КАРТА И АУДИОГИДЫ
+            </a>
+
+            <a href="../../herbs/">
+                ТРАВЫ
+            </a>
+
+            <a href="../../people/">
+                ЛИЧНОСТИ
+            </a>
+
+            <a href="../../gallery/photos/">
+                ГАЛЕРЕЯ
+            </a>
+
+            <a href="../../about/">
+                О ПРОЕКТЕ
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section
+    class="section"
+    style="padding-top:24px"
+>
+
+    <div
+        class="container"
+        style="max-width:860px"
+    >
+
+        <h1>
+            Г. Кудымкар
+        </h1>
+
+        <p class="lead">
+            Аудиогид по Кудымкару: история города, легенда о Кудым-Оше и древнее Кудымкарское городище.
+        </p>
+
+
+        <div
+            class="player"
+            style="margin-top:24px"
+        >
+
+            <audio
+                id="audio-player"
+                src="../../media/audio/guide-1.mp3"
+                preload="metadata"
+                data-slug="guide-1"
+            ></audio>
+
+            <div class="player__row">
+
+                <button
+                    class="player__btn"
+                    id="player-toggle"
+                    type="button"
+                >
+                    ▶
+                </button>
+
+                <span
+                    class="player__time"
+                    id="player-time"
+                >
+                    0:00 / 0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="player-seek"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    style="flex:1;min-width:160px"
+                >
+
+            </div>
+
+
+            <div
+                class="player__row"
+                style="margin-top:12px"
+            >
+
+                <label>🔊</label>
+
+                <input
+                    type="range"
+                    id="player-volume"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                    style="width:110px"
+                >
+
+                <div class="player__speeds">
+
+                    <button
+                        class="player__speed is-active"
+                        type="button"
+                        data-speed="1"
+                    >
+                        1×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.25"
+                    >
+                        1.25×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.5"
+                    >
+                        1.5×
+                    </button>
+
+                </div>
+
+                <a
+                    class="btn btn--terracotta btn--sm"
+                    href="../../media/audio/guide-1.mp3"
+                    download
+                >
+                    Скачать (MP3 128 kbps)
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="share"
+            role="group"
+            aria-label="Поделиться"
+        >
+
+            <a
+                class="share__btn share__btn--vk"
+                href="https://vk.com/share.php?url=https://smiiiira.github.io/perm/audio/guide-1/"
+                target="_blank"
+                rel="noopener"
+            >
+                ВКонтакте
+            </a>
+
+            <a
+                class="share__btn share__btn--tg"
+                href="https://t.me/share/url?url=https://smiiiira.github.io/perm/audio/guide-1/"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram
+            </a>
+
+            <button
+                class="share__btn share__btn--copy"
+                type="button"
+                data-share="copy"
+                data-url="https://smiiiira.github.io/perm/audio/guide-1/"
+            >
+                Скопировать ссылку
+            </button>
+
+        </div>
+
+
+        <details class="transcript detail">
+
+            <summary>
+                Текст аудиогида
+            </summary>
+
+            <div
+                style="margin-top:12px;white-space:pre-line"
+            >
+Привет! Мы с вами находимся в самом сердце Коми-Пермяцкого округа — в городе Кудымкаре. Знаете, у этого места совершенно особенная энергетика. Здесь оживают легенды, а история начинается не с летописей, а с древних сказаний о богатырях и колдуньях. Давайте перенесемся на много веков назад.
+
+Представьте себе VII-VIII века. Именно тогда, на высоком мысу под названием Изъюр — что в переводе с коми-пермяцкого означает «Каменная голова» — возникает укрепленное поселение. Это и есть рождение Кудымкарского городища, которое основали предки современных коми-пермяков. А теперь самое интересное — легенда об основателе. Его звали Кудым-Ош. Имя города так и переводится: «город Кудыма» или «городище Кудыма». Но кто же он такой? По преданию Кудым-Ош был рожден от союза могущественной колдуньи Пэвсин, которую называли «Одноглазой», и... медведя. Не удивляйтесь! Вторая часть его имени — «Ош» — как раз и означает «медведь». Такой вот суровый, тотемный супергерой древности.
+
+Шло время. К IX-XIII векам Кудымкарское городище переживает настоящий расцвет. Это был уже не просто поселок, а мощный центр. Кстати, археологи позже подтвердят: эти земли — настоящий клад. Городище является памятником сразу двух археологических культур — ломоватовской и родановской. То есть люди жили тут столетиями, развивались, торговали, строили укрепления.
+
+Но большая политика добралась и сюда. В 1472 году территория современного Кудымкара вместе с Пермью Великой входит в состав Московского княжества. Так местные племена становятся частью огромного русского государства.
+
+А теперь заглянем в документы. Первое письменное упоминание Кудымкара относится к 1579 году. Тогда в писцовых книгах Ивана Яхонтова его записали скромно — как деревню. Маленькую, но уже отмеченную на карте истории.
+
+Прошло еще два века, и в жизни деревни происходит событие грандиозное. С 1795 по 1804 год здесь строят Свято-Никольский кафедральный собор. Это было первое каменное здание в Кудымкаре! Представляете, каким чудом он казался местным жителям среди деревянных домов?
+
+Статус города Кудымкар получил не так уж давно — в 1938 году. Но свой символ, своего легендарного покровителя, город обрел уже в нашем веке. В 2008 году в центре установили памятник Кудым-Ошу. Скульптура очень символичная: раскрытая книга, из которой богатырь выходит с жезлом в руке. Это как мост между миром мифов и реальностью. Получается, Кудым-Ош буквально шагнул к нам со страниц древних сказаний.
+
+В Кудымкаре жили колдуньи и богатыри, шумели древние ярмарки и возводились первые каменные стены. Этот город умеет хранить свои тайны и рассказывать их тем, кто готов слушать.
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<script
+    src="../../js/player.js"
+    defer
+></script>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__grid">
+
+            <div>
+
+                <h3 class="heading">
+                    Digital-Пульс Прикамья
+                </h3>
+
+                <p>
+                    Цифровой туристический портал экспедиции: этномедицина, маршруты, история и аудиогиды Пермского края.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Разделы
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../../map/">
+                            Карта и аудиогиды
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../herbs/">
+                            Каталог трав
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../people/">
+                            Личности
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../gallery/photos/">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../about/">
+                            О проекте
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Контакты
+                </h3>
+
+                <p>
+                    Министерство туризма Пермского края
+                </p>
+
+                <p>
+                    <a href="mailto:info@digitalpuls.example">
+                        info@digitalpuls.example
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            © 2026 Digital-Пульс Прикамья ·
+
+            <a href="../../privacy/">
+                Политика конфиденциальности
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="../../js/main.js"
+    defer
+></script>
+
+</body>
+</html>

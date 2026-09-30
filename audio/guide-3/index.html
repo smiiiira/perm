@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Пермская художественная галерея — аудиогид</title>
+
+    <meta
+        name="description"
+        content="Аудиогид по Пермской художественной галерее и её коллекциям."
+    >
+
+    <link
+        rel="canonical"
+        href="https://smiiiira.github.io/perm2/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:site_name"
+        content="Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:title"
+        content="Пермская художественная галерея — аудиогид"
+    >
+
+    <meta
+        property="og:description"
+        content="Аудиогид по Пермской художественной галерее и её коллекциям."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/main.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="page-audio">
+
+<header class="site-header">
+
+    <div class="container site-header__inner">
+
+        <a
+            href="../../"
+            class="logo"
+            aria-label="Digital-Пульс Прикамья — на главную"
+        >
+
+            <img
+                class="logo__icon"
+                src="../../img/logo.svg"
+                alt=""
+            >
+
+            <span class="logo__text">
+
+                <span class="logo__name">
+                    DIGITAL-ПУЛЬС
+                </span>
+
+                <span class="logo__sub">
+                    ПРИКАМЬЯ
+                </span>
+
+            </span>
+
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            Меню
+        </button>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+        >
+
+            <a href="../../map/">
+                КАРТА И АУДИОГИДЫ
+            </a>
+
+            <a href="../../herbs/">
+                ТРАВЫ
+            </a>
+
+            <a href="../../people/">
+                ЛИЧНОСТИ
+            </a>
+
+            <a href="../../gallery/photos/">
+                ГАЛЕРЕЯ
+            </a>
+
+            <a href="../../about/">
+                О ПРОЕКТЕ
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section
+    class="section"
+    style="padding-top:24px"
+>
+
+    <div
+        class="container"
+        style="max-width:860px"
+    >
+
+        <h1>
+            Пермская художественная галерея
+        </h1>
+
+        <p class="lead">
+            Аудиогид по Пермской художественной галерее и её коллекциям.
+        </p>
+
+
+        <div
+            class="player"
+            style="margin-top:24px"
+        >
+
+            <audio
+                id="audio-player"
+                src="../../media/audio/guide-3.mp3"
+                preload="metadata"
+                data-slug="guide-3"
+            ></audio>
+
+            <div class="player__row">
+
+                <button
+                    class="player__btn"
+                    id="player-toggle"
+                    type="button"
+                >
+                    ▶
+                </button>
+
+                <span
+                    class="player__time"
+                    id="player-time"
+                >
+                    0:00 / 0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="player-seek"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    style="flex:1;min-width:160px"
+                >
+
+            </div>
+
+
+            <div
+                class="player__row"
+                style="margin-top:12px"
+            >
+
+                <label>🔊</label>
+
+                <input
+                    type="range"
+                    id="player-volume"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                    style="width:110px"
+                >
+
+                <div class="player__speeds">
+
+                    <button
+                        class="player__speed is-active"
+                        type="button"
+                        data-speed="1"
+                    >
+                        1×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.25"
+                    >
+                        1.25×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.5"
+                    >
+                        1.5×
+                    </button>
+
+                </div>
+
+                <a
+                    class="btn btn--terracotta btn--sm"
+                    href="../../media/audio/guide-3.mp3"
+                    download
+                >
+                    Скачать (MP3 128 kbps)
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="share"
+            role="group"
+            aria-label="Поделиться"
+        >
+
+            <a
+                class="share__btn share__btn--vk"
+                href="https://vk.com/share.php?url=https://smiiiira.github.io/perm2/audio/guide-3/"
+                target="_blank"
+                rel="noopener"
+            >
+                ВКонтакте
+            </a>
+
+            <a
+                class="share__btn share__btn--tg"
+                href="https://t.me/share/url?url=https://smiiiira.github.io/perm2/audio/guide-3/"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram
+            </a>
+
+            <button
+                class="share__btn share__btn--copy"
+                type="button"
+                data-share="copy"
+                data-url="https://smiiiira.github.io/perm2/audio/guide-3/"
+            >
+                Скопировать ссылку
+            </button>
+
+        </div>
+
+
+        <details class="transcript detail">
+
+            <summary>
+                Текст аудиогида
+            </summary>
+
+            <div
+                style="margin-top:12px;white-space:pre-line"
+            >
+                А теперь давайте переместимся в центр Перми, к сокровищу города — Пермской художественной галерее. Это один из крупнейших региональных художественных музеев России, где представлены экспонаты, каких больше не найти нигде в мире.
+
+                Начнём с истоков. В 1890 году в Перми был основан Научно-промышленный музей — именно он стал предшественником галереи. А в 1902 году при нём открылся художественный отдел. Сюда потихоньку начали поступать произведения искусства. Уже к 1907 году коллекцию пополнили работы пермских художников — братьев Василия и Петра Верещагиных. Но настоящая история галереи началась чуть позже.
+
+                7 ноября 1922 года, в честь пятой годовщины Октябрьской революции, художественный отдел преобразовали в самостоятельный Художественный музей. Его первым директором стал Александр Константинович Сыропятов. И вот здесь начинается самое интересное. В 1921 году в сарае Пашийского завода случайно нашли мужской портрет работы голландского мастера Готвальда Кумпхёйзена XVII века. Этот портрет стал первым экспонатом галереи. Голландский шедевр, забытый в уральском сарае, стал началом большой коллекции.
+
+                Уже в 1923 году начались этнографические экспедиции на север Прикамья. А с 1923 по 1926 год экспедиции под руководством Сыропятова и второго директора — Николая Николаевича Серебренникова — совершили настоящее чудо. Они сформировали знаменитую коллекцию «Пермских богов». Это крупнейшее в стране собрание русской деревянной скульптуры, аналогов которому нет ни в одном музее мира. Название коллекции дал нарком просвещения РСФСР Анатолий Луначарский, посетивший Пермь в 1928 году. Он был настолько впечатлён, что счёл эти скульптуры достойными божественного имени.
+
+                Результаты экспедиций были ошеломляющими. Только за один год коллекция выросла со 150 до более чем 2 тысяч экспонатов. А к 1925 году фонды музея насчитывали уже более 4000 экспонатов.
+
+                В 1932 году музей получил Спасо-Преображенский собор — памятник архитектуры XIX века. У этого собора удивительная судьба: его перевезли из Пыскора в 1799 году, а основали его Строгановы ещё в 1560 году. То есть здание буквально собрало в себе несколько эпох. В 1936 году музей переименовали в Пермскую государственную художественную галерею. Изначально одноэтажное здание собора перестроили в трёхэтажное, чтобы разместить все коллекции. Храм стал домом для искусства.
+
+                В 2011 году Спасо-Преображенский собор был официально возвращён Русской Православной Церкви. Галерея же готовится к переезду в новое здание — её коллекции остаются бесценными.
+
+                Теперь о главных сокровищах. Конечно же, это «Пермские боги» — деревянная храмовая скульптура XVII-XIX веков. Это живые лики, вырезанные из дерева, которые когда-то стояли в северных храмах Прикамья.
+
+                Древнерусская живопись XV-XVIII веков — иконы мастеров Москвы, Средней Руси, Русского Севера и Урала. Здесь есть знаменитые иконы Строгановской школы. Вообще Строгановы оставили в этих краях огромный след. Искусство Строгановских вотчин XVI-XVII веков включает иконопись и лицевое золотное шитьё, созданные в их мастерских. Это было настоящее элитное искусство своего времени.
+
+                Русское искусство XVIII — начала XX века представлено от художников-академистов до представителей русского авангарда. Западноевропейское искусство XV-XVIII веков — картины мастеров Итальянского Возрождения, Голландии и других стран. А ещё в галерее есть искусство Древнего мира — произведения Древнего Египта и античности, и восточное — Тибет, Китай, Индия, Япония. Вас ждёт настоящее путешествие по всему миру.
+
+                Пермская художественная галерея — это место, где русский Север встречается с искусством Голландии, а деревянные боги Прикамья — с древнеегипетскими артефактами. И всё это собрано людьми, которые верили, что искусство должно быть доступно каждому.
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<script
+    src="../../js/player.js"
+    defer
+></script>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__grid">
+
+            <div>
+
+                <h3 class="heading">
+                    Digital-Пульс Прикамья
+                </h3>
+
+                <p>
+                    Цифровой туристический портал экспедиции:
+                    этномедицина, маршруты, история и аудиогиды
+                    Пермского края.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Разделы
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../../map/">
+                            Карта и аудиогиды
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../herbs/">
+                            Каталог трав
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../people/">
+                            Личности
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../gallery/photos/">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../about/">
+                            О проекте
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Контакты
+                </h3>
+
+                <p>
+                    Министерство туризма Пермского края
+                </p>
+
+                <p>
+                    <a href="mailto:info@digitalpuls.example">
+                        info@digitalpuls.example
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            © 2026 Digital-Пульс Прикамья ·
+
+            <a href="../../privacy/">
+                Политика конфиденциальности
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="../../js/main.js"
+    defer
+></script>
+
+</body>
+
+</html>

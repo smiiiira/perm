@@ -725,9 +725,11 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   font-family: var(--font-body);
   color: var(--c-cream);
 }
-.share__btn--vk { background: #0077ff; }
-.share__btn--tg { background: #2aabee; }
-.share__btn--copy { background: var(--c-brown); }
+.share__btn--vk,
+.share__btn--tg,
+.share__btn--copy {
+  background: var(--c-brown);
+}
 
 .bg-blue { background: var(--c-blue); }
 .bg-green { background: var(--c-green); }

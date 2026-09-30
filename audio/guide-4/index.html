@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Музей пермских древностей — аудиогид</title>
+
+    <meta
+        name="description"
+        content="Аудиогид по Музею пермских древностей."
+    >
+
+    <link
+        rel="canonical"
+        href="https://smiiiira.github.io/perm2/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:site_name"
+        content="Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:title"
+        content="Музей пермских древностей — аудиогид"
+    >
+
+    <meta
+        property="og:description"
+        content="Аудиогид по Музею пермских древностей."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/main.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="page-audio">
+
+<header class="site-header">
+
+    <div class="container site-header__inner">
+
+        <a
+            href="../../"
+            class="logo"
+            aria-label="Digital-Пульс Прикамья — на главную"
+        >
+
+            <img
+                class="logo__icon"
+                src="../../img/logo.svg"
+                alt=""
+            >
+
+            <span class="logo__text">
+
+                <span class="logo__name">
+                    DIGITAL-ПУЛЬС
+                </span>
+
+                <span class="logo__sub">
+                    ПРИКАМЬЯ
+                </span>
+
+            </span>
+
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            Меню
+        </button>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+        >
+
+            <a href="../../map/">
+                КАРТА И АУДИОГИДЫ
+            </a>
+
+            <a href="../../herbs/">
+                ТРАВЫ
+            </a>
+
+            <a href="../../people/">
+                ЛИЧНОСТИ
+            </a>
+
+            <a href="../../gallery/photos/">
+                ГАЛЕРЕЯ
+            </a>
+
+            <a href="../../about/">
+                О ПРОЕКТЕ
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section
+    class="section"
+    style="padding-top:24px"
+>
+
+    <div
+        class="container"
+        style="max-width:860px"
+    >
+
+        <h1>
+            Музей пермских древностей
+        </h1>
+
+        <p class="lead">
+            Аудиогид по Музею пермских древностей.
+        </p>
+
+
+        <div
+            class="player"
+            style="margin-top:24px"
+        >
+
+            <audio
+                id="audio-player"
+                src="../../media/audio/guide-4.mp3"
+                preload="metadata"
+                data-slug="guide-4"
+            ></audio>
+
+            <div class="player__row">
+
+                <button
+                    class="player__btn"
+                    id="player-toggle"
+                    type="button"
+                >
+                    ▶
+                </button>
+
+                <span
+                    class="player__time"
+                    id="player-time"
+                >
+                    0:00 / 0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="player-seek"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    style="flex:1;min-width:160px"
+                >
+
+            </div>
+
+
+            <div
+                class="player__row"
+                style="margin-top:12px"
+            >
+
+                <label>🔊</label>
+
+                <input
+                    type="range"
+                    id="player-volume"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                    style="width:110px"
+                >
+
+                <div class="player__speeds">
+
+                    <button
+                        class="player__speed is-active"
+                        type="button"
+                        data-speed="1"
+                    >
+                        1×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.25"
+                    >
+                        1.25×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.5"
+                    >
+                        1.5×
+                    </button>
+
+                </div>
+
+                <a
+                    class="btn btn--terracotta btn--sm"
+                    href="../../media/audio/guide-4.mp3"
+                    download
+                >
+                    Скачать (MP3 128 kbps)
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="share"
+            role="group"
+            aria-label="Поделиться"
+        >
+
+            <a
+                class="share__btn share__btn--vk"
+                href="https://vk.com/share.php?url=https://smiiiira.github.io/perm2/audio/guide-4/"
+                target="_blank"
+                rel="noopener"
+            >
+                ВКонтакте
+            </a>
+
+            <a
+                class="share__btn share__btn--tg"
+                href="https://t.me/share/url?url=https://smiiiira.github.io/perm2/audio/guide-4/"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram
+            </a>
+
+            <button
+                class="share__btn share__btn--copy"
+                type="button"
+                data-share="copy"
+                data-url="https://smiiiira.github.io/perm2/audio/guide-4/"
+            >
+                Скопировать ссылку
+            </button>
+
+        </div>
+
+
+        <details class="transcript detail">
+
+            <summary>
+                Текст аудиогида
+            </summary>
+
+            <div
+                style="margin-top:12px;white-space:pre-line"
+            >
+                А сейчас мы отправимся в путешествие во времени — на миллионы лет назад. Добро пожаловать в Музей пермских древностей! Это место, где можно встретиться с мамонтом, ящерами и даже метеоритом. И поверьте, скучно не будет ни детям, ни взрослым.
+
+                Всё началось в 1890 году, когда был основан Пермский краеведческий музей — предшественник нынешнего. Но настоящие сокровища пришли сюда в 1920-е годы. Тогда фонды пополнились знаменитой коллекцией уральских и европейских древностей, собранной в XIX веке двумя удивительными людьми — отцом и сыном Теплоуховыми. Александр Ефимович и Фёдор Александрович вошли в историю как основатели научной школы уральского лесоводства. Но вот что поражает: оба вышли из крепостных крестьян графов Строгановых! Благодаря таланту и упорству они стали выдающимися учёными. Их коллекция включала знаменитый пермский звериный стиль — бронзовые амулеты с образами животных периода раннего железного века и средневековья. Это магические фигурки, в которых древние уральцы соединяли мир людей и мир зверей.
+
+                А теперь — история, которую обожают все пермяки. 1927 год. Обычные дети во время прогулки находят... скелет мамонта! Этот мамонт стал самым узнаваемым и любимым экспонатом музея. Его возраст — около 150 000 лет. Представляете, этот гигант ходил по земле задолго до появления человека.
+
+                Как отдельный музей «Пермские древности» были основаны в 1985 году в качестве центра изучения геологии и палеонтологии Пермского края. А в 2010 году, с 23 августа по 16 октября, впервые открылась выставка «Музей пермских древностей» прямо в здании железнодорожного вокзала станции «Пермь I». Это был необычный проект. Особенно впечатлила посетителей «Тропа эволюции» — интерактивный зал, где можно провести настоящие палеонтологические раскопки и под слоем песка найти скелеты пермских ящеров.
+
+                Теперь о главных экспонатах. Конечно же, это «Пермский мамонт» — тот самый, найденный детьми. Он до сих пор остаётся звездой музея. Но рядом с ним — удивительные существа. Вот, например, ископаемый кузнечик пермского периода — у него самые длинные в мире усы. А вот эстемменозух — в переводе «ящер с короной на голове». Выглядит как доисторический дракон.
+
+                Есть здесь и волконскоит — окаменевшая древесина пермского периода. Из неё производили минеральную краску, которую особенно любил... Пабло Пикассо! Да-да, великий художник писал краской из пермских недр. А ещё в музее можно увидеть пермских звероящеров, открытых в Очёрском районе в результате самых больших раскопок в истории отечественной палеонтологии. Это были удивительные существа — переходная форма между рептилиями и млекопитающими.
+
+                Не забудьте взглянуть на Оханский метеорит. Он выпал в 1887 году в виде метеоритного дождя в окрестностях села Таборы Пермской губернии. Это настоящий кусочек космоса, упавший на пермскую землю. А ещё здесь есть кораллы пермских морей — окаменелые остатки морских обитателей. Да, миллионы лет назад на месте Перми плескалось древнее море!
+
+                Музей пермских древностей доказывает: наука — это не скучные учебники, а захватывающее приключение. Здесь каждый может почувствовать себя первооткрывателем.
+            </div>
+
+        </details>
+
+    </div>
+
+</section>
+
+
+<script
+    src="../../js/player.js"
+    defer
+></script>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__grid">
+
+            <div>
+
+                <h3 class="heading">
+                    Digital-Пульс Прикамья
+                </h3>
+
+                <p>
+                    Цифровой туристический портал экспедиции:
+                    этномедицина, маршруты, история и аудиогиды
+                    Пермского края.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Разделы
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../../map/">
+                            Карта и аудиогиды
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../herbs/">
+                            Каталог трав
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../people/">
+                            Личности
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../gallery/photos/">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../about/">
+                            О проекте
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Контакты
+                </h3>
+
+                <p>
+                    Министерство туризма Пермского края
+                </p>
+
+                <p>
+                    <a href="mailto:info@digitalpuls.example">
+                        info@digitalpuls.example
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            © 2026 Digital-Пульс Прикамья ·
+
+            <a href="../../privacy/">
+                Политика конфиденциальности
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="../../js/main.js"
+    defer
+></script>
+
+</body>
+
+</html>
