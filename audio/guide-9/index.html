@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Центральный парк культуры и отдыха имени Горького — аудиогид</title>
+
+    <meta
+        name="description"
+        content="Аудиогид по Центральному парку культуры и отдыха имени Горького в Перми."
+    >
+
+    <link
+        rel="canonical"
+        href="https://smiiiira.github.io/perm2/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:site_name"
+        content="Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:title"
+        content="Центральный парк культуры и отдыха имени Горького — аудиогид"
+    >
+
+    <meta
+        property="og:description"
+        content="Аудиогид по Центральному парку культуры и отдыха имени Горького в Перми."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../css/main.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body class="page-audio">
+
+<header class="site-header">
+
+    <div class="container site-header__inner">
+
+        <a
+            href="../../"
+            class="logo"
+            aria-label="Digital-Пульс Прикамья — на главную"
+        >
+
+            <img
+                class="logo__icon"
+                src="../../img/logo.svg"
+                alt=""
+            >
+
+            <span class="logo__text">
+
+                <span class="logo__name">
+                    DIGITAL-ПУЛЬС
+                </span>
+
+                <span class="logo__sub">
+                    ПРИКАМЬЯ
+                </span>
+
+            </span>
+
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
+            Меню
+        </button>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+        >
+
+            <a href="../../map/">
+                КАРТА И АУДИОГИДЫ
+            </a>
+
+            <a href="../../herbs/">
+                ТРАВЫ
+            </a>
+
+            <a href="../../people/">
+                ЛИЧНОСТИ
+            </a>
+
+            <a href="../../gallery/photos/">
+                ГАЛЕРЕЯ
+            </a>
+
+            <a href="../../about/">
+                О ПРОЕКТЕ
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<section
+    class="section"
+    style="padding-top:24px"
+>
+
+    <div
+        class="container"
+        style="max-width:860px"
+    >
+
+        <div class="detail audio-detail">
+
+            <div class="detail__layout">
+
+                <div class="detail__media">
+
+                    <picture>
+
+                        <source
+                            type="image/webp"
+                            srcset="../../media/images/guide-9-1600.webp"
+                        >
+
+                        <img
+                            src="../../media/images/guide-9-1600.jpg"
+                            alt="Центральный парк культуры и отдыха имени Горького"
+                            width="1600"
+                            height="1200"
+                            loading="lazy"
+                        >
+
+                    </picture>
+
+                </div>
+
+                <div>
+
+<h1>
+            Центральный парк культуры и отдыха имени Горького
+        </h1>
+
+        <p class="lead">
+            Аудиогид по Центральному парку культуры и отдыха имени Горького в Перми.
+        </p>
+
+
+        <div
+            class="player"
+            style="margin-top:24px"
+        >
+
+            <audio
+                id="audio-player"
+                src="../../media/audio/guide-9.mp3"
+                preload="metadata"
+                data-slug="guide-9"
+            ></audio>
+
+            <div class="player__row">
+
+                <button
+                    class="player__btn"
+                    id="player-toggle"
+                    type="button"
+                >
+                    ▶
+                </button>
+
+                <span
+                    class="player__time"
+                    id="player-time"
+                >
+                    0:00 / 0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="player-seek"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                    style="flex:1;min-width:160px"
+                >
+
+            </div>
+
+
+            <div
+                class="player__row"
+                style="margin-top:12px"
+            >
+
+                <label>🔊</label>
+
+                <input
+                    type="range"
+                    id="player-volume"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                    style="width:110px"
+                >
+
+                <div class="player__speeds">
+
+                    <button
+                        class="player__speed is-active"
+                        type="button"
+                        data-speed="1"
+                    >
+                        1×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.25"
+                    >
+                        1.25×
+                    </button>
+
+                    <button
+                        class="player__speed"
+                        type="button"
+                        data-speed="1.5"
+                    >
+                        1.5×
+                    </button>
+
+                </div>
+
+                <a
+                    class="btn btn--terracotta btn--sm"
+                    href="../../media/audio/guide-9.mp3"
+                    download
+                >
+                    Скачать (MP3 128 kbps)
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="share"
+            role="group"
+            aria-label="Поделиться"
+        >
+
+            <a
+                class="share__btn share__btn--vk"
+                href="https://vk.com/share.php?url=https://smiiiira.github.io/perm2/audio/guide-9/"
+                target="_blank"
+                rel="noopener"
+            >
+                ВКонтакте
+            </a>
+
+            <a
+                class="share__btn share__btn--tg"
+                href="https://t.me/share/url?url=https://smiiiira.github.io/perm2/audio/guide-9/"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram
+            </a>
+
+            <button
+                class="share__btn share__btn--copy"
+                type="button"
+                data-share="copy"
+                data-url="https://smiiiira.github.io/perm2/audio/guide-9/"
+            >
+                Скопировать ссылку
+            </button>
+
+        </div>
+
+
+                        </div>
+
+            </div>
+
+<details class="transcript">
+
+            <summary>
+                Текст аудиогида
+            </summary>
+
+            <div
+                style="margin-top:12px;white-space:pre-line"
+            >
+                Это место — настоящая машина времени: здесь гуляли императоры и писатели, измеряли широту великие учёные и слушали музыку ссыльные князья. Добро пожаловать в Центральный парк культуры и отдыха имени Горького — главный парк Перми, который жители ласково называют просто «Горьковским».
+
+                История парка началась с заботы о городском хозяйстве. В 1804-1805 годах по инициативе губернатора Карла Фёдоровича Модераха для отвода талых и дождевых вод построили дренажную систему — земляной вал и ров. А на северной стороне вала посадили четыре линии берёз. Так появился Загородный бульвар — первое общественное место для гуляний в Перми. До этого у города не было ни частных, ни общественных садов. Боковые аллеи сделали пешеходными, а среднюю часть оставили для проезда экипажей.
+
+                В 1824 году Пермь ждала важного гостя — императора Александра I. К его приезду архитектор Иван Свиязев построил в саду ротонду — круглую беседку с двенадцатью колоннами и куполом. Она стала главным символом парка и настоящей визитной карточкой Перми. Ротонду построили из уральской лиственницы, известной своей прочностью. Первый капитальный ремонт ей понадобился только через сто пятьдесят лет! Вот что значит уральское дерево.
+
+                В 1829 году в Загородном саду проводил измерения знаменитый немецкий учёный Александр фон Гумбольдт — основатель современной географии. Именно здесь, в центре сада, он определил, что Пермь находится на 58-й параллели. Созданная им система координат до сих пор является основополагающей во всём мире.
+
+                В 1882 году губернатор Александр Анастасьев превратил Загородный бульвар в Сад общественного собрания. Здесь появились театр, буфет, бильярд, кегельбан, комнаты для карточных игр. Позже заиграл духовой оркестр — он радовал слушателей почти каждый день. В саду проводили народные праздники и беспроигрышные лотереи-аллегри с немедленной выдачей выигрышей. Жизнь в Саду кипела!
+
+                В 1902 году парк посетил Антон Павлович Чехов. Есть забавная легенда: писатель гулял по Загородному саду, присел на лавочку и прочитал в газете заметку о том, что в Пермь приехал «известный писатель Горький». Так, по иронии судьбы, имя Максима Горького оказалось связано с парком задолго до того, как он получил его официально. Кто бы мог подумать!
+
+                В 1918 году здесь гулял великий князь Михаил Романов, брат императора Николая II, находившийся в ссылке в Перми. В своём дневнике он записал: «После чая Джонсон и я пошли в городской сад, что у Сибирской заставы, где сидели и слушали музыку, струнный оркестр». Такая вот трогательная картина: ссыльный князь слушает музыку среди берёз.
+
+                В советский период парк переименовали в Центральный парк культуры и отдыха имени М. Горького. За свою историю он назывался по-разному: Загородным бульваром, Загородным садом, Красным садом. Здесь читали лекции, организовывали выставки, Пермский драматический театр здесь показывал свои постановки. А зимой вокруг ротонды и прямо по аллеям заливали каток — люди катались на коньках по дорожкам парка.
+
+                В 2013 году в парке установили новое колесо обозрения высотой пятьдесят метров, что сравнимо с 16-этажным домом. Оно весит сто шестьдесят две тонны, имеет двадцать четыре кабинки, а полный оборот занимает пять минут. С высоты открывается потрясающий вид на город.
+
+                Сегодня парк — крупный развлекательный комплекс с более чем пятьюдесятью аттракционами, мини-зоопарком и полями для мини-гольфа. Но главное — его по-прежнему называют «лёгкими» города: здесь растут редкие растения, внесённые в список особо охраняемых видов Пермского края. Летом проходят фотовыставки и фестивали, а зимой — выставки ледяных скульптур. Так что прогуляйтесь по парку не спеша, посидите в той самой ротонде, где, возможно, когда-то был император.
+            </div>
+
+        </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script
+    src="../../js/player.js"
+    defer
+></script>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__grid">
+
+            <div>
+
+                <h3 class="heading">
+                    Digital-Пульс Прикамья
+                </h3>
+
+                <p>
+                    Цифровой туристический портал экспедиции:
+                    этномедицина, маршруты, история и аудиогиды
+                    Пермского края.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Разделы
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../../map/">
+                            Карта и аудиогиды
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../herbs/">
+                            Каталог трав
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../people/">
+                            Личности
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../gallery/photos/">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../../about/">
+                            О проекте
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Контакты
+                </h3>
+
+                <p>
+                    Министерство туризма Пермского края
+                </p>
+
+                <p>
+                    <a href="mailto:info@digitalpuls.example">
+                        info@digitalpuls.example
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            © 2026 Digital-Пульс Прикамья ·
+
+            <a href="../../privacy/">
+                Политика конфиденциальности
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script
+    src="../../js/main.js"
+    defer
+></script>
+
+</body>
+
+</html>
