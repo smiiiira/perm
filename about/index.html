@@ -1,57 +1,1094 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>О проекте</title><meta name="description" content="Об экспедиции «Digital-Пульс Прикамья»"><link rel="canonical" href="https://smiiiira.github.io/perm2/"><meta property="og:type" content="website"><meta property="og:site_name" content="Digital-Пульс Прикамья"><meta property="og:title" content="О проекте"><meta property="og:description" content="Об экспедиции «Digital-Пульс Прикамья»"><link rel="icon" href="../img/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="../img/favicon.svg"><link rel="stylesheet" href="../css/main.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet"></head><body><header class="site-header">
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>О проекте — Digital-Пульс Прикамья</title>
+
+    <meta
+        name="description"
+        content="О проекте «Digital-Пульс Прикамья», его целях, задачах и участниках экспедиции."
+    >
+
+    <link
+        rel="canonical"
+        href="https://smiiiira.github.io/perm/about/"
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:site_name"
+        content="Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:title"
+        content="О проекте — Digital-Пульс Прикамья"
+    >
+
+    <meta
+        property="og:description"
+        content="О проекте «Digital-Пульс Прикамья», его целях, задачах и участниках экспедиции."
+    >
+
+    <link
+        rel="icon"
+        href="../img/favicon.ico"
+        sizes="any"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="../img/favicon.svg"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap&subset=cyrillic"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* ==========================================================
+           ABOUT PAGE
+           ========================================================== */
+
+        .about-page {
+            padding: 54px 0 70px;
+        }
+
+        .about-page .container {
+            max-width: 1180px;
+        }
+
+        /* Убираем большие глобальные отступы между секциями */
+
+        .about-block {
+            margin: 0;
+        }
+
+        .about-block + .about-block {
+            margin-top: 42px;
+        }
+
+        .about-intro {
+            max-width: 1050px;
+        }
+
+        .about-intro h1 {
+            margin-bottom: 26px;
+        }
+
+        .about-lead {
+            max-width: 980px;
+            margin: 0 0 18px;
+            font-size: 1.12rem;
+            line-height: 1.65;
+        }
+
+        .about-intro__text {
+            max-width: 1000px;
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+
+        /* Заголовки разделов */
+
+        .about-block__heading {
+            margin-bottom: 20px;
+        }
+
+        .about-block__heading h2 {
+            margin: 0;
+        }
+
+        .about-block__intro {
+            max-width: 850px;
+            margin: 0 0 24px;
+        }
+
+
+        /* ==========================================================
+           ЦЕЛИ
+           ========================================================== */
+
+        .about-goals {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .about-goal {
+            background: #efe3bc;
+            border-radius: var(--radius-lg);
+            padding: 26px 28px;
+            color: var(--c-text);
+        }
+
+        .about-goal__number {
+            display: block;
+            margin-bottom: 12px;
+            color: var(--c-sage-dark);
+            font-family: var(--font-body);
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+        }
+
+        .about-goal h3 {
+            margin: 0 0 10px;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+        }
+
+        .about-goal p {
+            margin: 0;
+            line-height: 1.65;
+        }
+
+
+        /* ==========================================================
+           ЧТО ОБЪЕДИНЯЕТ ПРОЕКТ
+           ========================================================== */
+
+        .about-directions {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .about-direction {
+            min-height: 150px;
+            padding: 26px 22px;
+            background: #efe3bc;
+            border-radius: var(--radius-lg);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        .about-direction h3 {
+            margin: 0;
+            font-family: var(--font-heading);
+            font-size: 1.12rem;
+            line-height: 1.35;
+            font-weight: 700;
+        }
+
+
+        /* ==========================================================
+           КОМАНДА
+           ========================================================== */
+
+        .about-team {
+            display: grid;
+            gap: 18px;
+        }
+
+        .about-team__block {
+            background: #efe3bc;
+            border-radius: var(--radius-lg);
+            padding: 28px 30px;
+        }
+
+        .about-team__block h3 {
+            margin: 0 0 20px;
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+        }
+
+        .about-team__block h4 {
+            margin: 20px 0 8px;
+            font-family: var(--font-heading);
+            font-size: 1.02rem;
+        }
+
+        .about-team__block h4:first-of-type {
+            margin-top: 0;
+        }
+
+        .about-team__block p {
+            margin: 0;
+            line-height: 1.65;
+        }
+
+        .about-team__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about-team__list li {
+            margin: 0 0 11px;
+            line-height: 1.6;
+        }
+
+        .about-team__list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-team__organization {
+            margin-top: 20px;
+        }
+
+        .about-team__organization:first-child {
+            margin-top: 0;
+        }
+
+        .about-team__organization-title {
+            margin: 0 0 7px;
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+
+        /* ==========================================================
+           ФИНАЛЬНЫЙ ТЕКСТ
+           ========================================================== */
+
+        .about-final {
+            max-width: 900px;
+            margin: 42px 0 0;
+            padding-top: 26px;
+            border-top: 1px solid rgba(43, 33, 25, .18);
+        }
+
+        .about-final p {
+            max-width: 850px;
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+
+        /* ==========================================================
+           АДАПТИВ
+           ========================================================== */
+
+        @media (max-width: 900px) {
+
+            .about-directions {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        @media (max-width: 720px) {
+
+            .about-page {
+                padding: 38px 0 52px;
+            }
+
+            .about-block + .about-block {
+                margin-top: 34px;
+            }
+
+            .about-intro h1 {
+                margin-bottom: 20px;
+            }
+
+            .about-lead {
+                font-size: 1rem;
+            }
+
+            .about-goals {
+                grid-template-columns: 1fr;
+            }
+
+            .about-directions {
+                grid-template-columns: 1fr;
+            }
+
+            .about-direction {
+                min-height: 110px;
+            }
+
+            .about-team__block {
+                padding: 24px 20px;
+            }
+
+        }
+
+
+        @media (max-width: 420px) {
+
+            .about-page {
+                padding-top: 30px;
+            }
+
+            .about-goal {
+                padding: 22px 20px;
+            }
+
+            .about-direction {
+                padding: 22px 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
     <div class="container site-header__inner">
 
-        <a href="../" class="logo" aria-label="Digital-Пульс Прикамья — на главную">
+        <a
+            href="../"
+            class="logo"
+            aria-label="Digital-Пульс Прикамья — на главную"
+        >
 
-            <img class="logo__icon" src="../img/logo.svg" alt="">
+            <img
+                class="logo__icon"
+                src="../img/logo.svg"
+                alt=""
+            >
 
             <span class="logo__text">
-                <span class="logo__name">DIGITAL-ПУЛЬС</span>
-                <span class="logo__sub">ПРИКАМЬЯ</span>
+
+                <span class="logo__name">
+                    DIGITAL-ПУЛЬС
+                </span>
+
+                <span class="logo__sub">
+                    ПРИКАМЬЯ
+                </span>
+
             </span>
 
         </a>
 
-        <button class="menu-toggle"
-                type="button"
-                aria-expanded="false"
-                aria-controls="site-nav">
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+        >
             Меню
         </button>
 
-        <nav class="site-nav" id="site-nav">
-            <a href="../map/">КАРТА И АУДИОГИДЫ</a>
-            <a href="../herbs/">ТРАВЫ</a>
-            <a href="../people/">ЛИЧНОСТИ</a>
-            <a href="../gallery/photos/">ГАЛЕРЕЯ</a>
-            <a href="../about/">О ПРОЕКТЕ</a>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+        >
+
+            <a href="../map/">
+                КАРТА И АУДИОГИДЫ
+            </a>
+
+            <a href="../herbs/">
+                ТРАВЫ
+            </a>
+
+            <a href="../people/">
+                ЛИЧНОСТИ
+            </a>
+
+            <a href="../gallery/photos/">
+                ГАЛЕРЕЯ
+            </a>
+
+            <a
+                href="../about/"
+                aria-current="page"
+            >
+                О ПРОЕКТЕ
+            </a>
+
         </nav>
 
     </div>
+
 </header>
 
 
-<section class="section">
-  <div class="container" style="max-width: 860px;">
-    <p class="overline">О проекте</p>
-    <h1>Digital-Пульс Прикамья</h1>
-    <p class="lead">«Открой Прикамье по-новому: через здоровье и традиции»</p>
 
-    <h2>Цели и задачи экспедиции</h2>
-    <p>Экспедиция «Digital-Пульс Прикамья» создана, чтобы вживую собрать уникальные рецепты народной медицины, записать голоса старожилов, задокументировать легенды и быт коренных этносов Пермского края — и сохранить это знание для будущих поколений.</p>
-    <p>Параллельно команда изучает туристические тропы: оценивает сложность и привязывает точки экспедиции к GPS-координатам, чтобы путешественники могли безопасно пройти маршрутами команды.</p>
+<main class="about-page">
 
-    <h2>Наша главная цель</h2>
-    <p>Создать многофункциональный цифровой гид, который объединит этномедицинский сборник, интерактивную карту маршрутов и аудиогид.</p>
-
-    <h2>Участники</h2>
-    <p>Раздел будет дополнен фотографиями и рассказами об участниках экспедиции после экспедиции'.</p>
-  </div>
-</section>
+    <div class="container">
 
 
+        <!-- ======================================================
+             ВВЕДЕНИЕ
+             ====================================================== -->
+
+        <section class="about-block about-intro">
+
+            <p class="overline">
+                О проекте
+            </p>
+
+            <h1>
+                Digital-Пульс Прикамья
+            </h1>
+
+            <p class="about-lead">
+                «Открой Прикамье по-новому: через здоровье и традиции»
+            </p>
+
+            <p class="about-intro__text">
+                «Digital-Пульс Прикамья» — цифровой проект экспедиции,
+                посвящённый исследованию Прикамья, сохранению собранных
+                знаний и представлению материалов экспедиции в удобном
+                цифровом формате.
+            </p>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             ЦЕЛИ И ЗАДАЧИ
+             ====================================================== -->
+
+        <section class="about-block">
+
+            <div class="about-block__heading">
+
+                <p class="overline">
+                    Цели и задачи
+                </p>
+
+                <h2>
+                    Что исследует экспедиция
+                </h2>
+
+            </div>
+
+            <p class="about-block__intro">
+                Экспедиция собирает и документирует материалы,
+                связанные с народной медициной, традициями,
+                историями и особенностями культуры Прикамья.
+                Параллельно команда исследует туристические маршруты
+                и фиксирует точки экспедиции.
+            </p>
+
+
+            <div class="about-goals">
+
+                <article class="about-goal">
+
+                    <span class="about-goal__number">
+                        01
+                    </span>
+
+                    <h3>
+                        Сохранять знания
+                    </h3>
+
+                    <p>
+                        Собрать и сохранить сведения о народной медицине,
+                        традициях, историях и культурных особенностях
+                        Прикамья.
+                    </p>
+
+                </article>
+
+
+                <article class="about-goal">
+
+                    <span class="about-goal__number">
+                        02
+                    </span>
+
+                    <h3>
+                        Документировать материалы
+                    </h3>
+
+                    <p>
+                        Зафиксировать собранные во время экспедиции
+                        материалы и представить их в доступном
+                        цифровом формате.
+                    </p>
+
+                </article>
+
+
+                <article class="about-goal">
+
+                    <span class="about-goal__number">
+                        03
+                    </span>
+
+                    <h3>
+                        Исследовать маршруты
+                    </h3>
+
+                    <p>
+                        Изучить туристические тропы, оценить их
+                        особенности и зафиксировать точки экспедиции
+                        по GPS-координатам.
+                    </p>
+
+                </article>
+
+
+                <article class="about-goal">
+
+                    <span class="about-goal__number">
+                        04
+                    </span>
+
+                    <h3>
+                        Создать цифровой гид
+                    </h3>
+
+                    <p>
+                        Объединить собранные материалы в единый
+                        цифровой ресурс, доступный путешественникам
+                        и всем, кто интересуется Прикамьем.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             ЧТО ОБЪЕДИНЯЕТ ПРОЕКТ
+             ====================================================== -->
+
+        <section class="about-block">
+
+            <div class="about-block__heading">
+
+                <p class="overline">
+                    Цифровой гид
+                </p>
+
+                <h2>
+                    Что объединяет проект
+                </h2>
+
+            </div>
+
+            <p class="about-block__intro">
+                Собранные материалы представлены на сайте
+                в нескольких тематических разделах.
+            </p>
+
+
+            <div class="about-directions">
+
+                <article class="about-direction">
+
+                    <h3>
+                        Этномедицина
+                    </h3>
+
+                </article>
+
+
+                <article class="about-direction">
+
+                    <h3>
+                        Маршруты
+                    </h3>
+
+                </article>
+
+
+                <article class="about-direction">
+
+                    <h3>
+                        Аудиогиды
+                    </h3>
+
+                </article>
+
+
+                <article class="about-direction">
+
+                    <h3>
+                        Истории и личности
+                    </h3>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================================
+             УЧАСТНИКИ
+             ====================================================== -->
+
+        <section class="about-block">
+
+            <div class="about-block__heading">
+
+                <p class="overline">
+                    Команда
+                </p>
+
+                <h2>
+                    Участники экспедиции
+                </h2>
+
+            </div>
+
+            <p class="about-block__intro">
+                В проекте участвуют представители нескольких
+                образовательных организаций.
+            </p>
+
+
+            <div class="about-team">
+
+
+                <!-- РУКОВОДИТЕЛЬ -->
+
+                <article class="about-team__block">
+
+                    <h3>
+                        Руководитель
+                    </h3>
+
+                    <ul class="about-team__list">
+
+                        <li>
+                            <strong>
+                                Гуменникова Мария Сергеевна
+                            </strong>
+                            — специалист отдела по молодёжной политике
+                            и воспитательной работе ИГМУ.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+
+                <!-- ОРГАНИЗАТОРЫ -->
+
+                <article class="about-team__block">
+
+                    <h3>
+                        Организаторы
+                    </h3>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            ИГМУ
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Ананичева Татьяна Андреевна
+                            </li>
+
+                            <li>
+                                Куликова Дарья Егоровна
+                            </li>
+
+                            <li>
+                                Болонева Дарья Николаевна
+                                — ассистент кафедры ОХиТА ИГМУ
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            Байкальский государственный университет
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Гуменникова Анастасия Сергеевна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            НИУ ВШЭ
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Галиева Дарья Алексеевна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            ИГУ
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Спасибко Александра Борисовна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- УЧАСТНИКИ -->
+
+                <article class="about-team__block">
+
+                    <h3>
+                        Участники
+                    </h3>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            ИГМУ
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Уракова Екатерина Алексеевна
+                            </li>
+
+                            <li>
+                                Жданова Дарья Алексеевна
+                            </li>
+
+                            <li>
+                                Трухинов Андрей Валерьевич
+                            </li>
+
+                            <li>
+                                Мукушев Кирилл Дмитриевич
+                            </li>
+
+                            <li>
+                                Колмакова Софья Вадимовна
+                            </li>
+
+                            <li>
+                                Томаш Елизавета Артёмовна — ординатор
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            Университет ИТМО
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Кузьмина Анастасия Дмитриевна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            НИУ ВШЭ
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Самохин Василий Романович
+                            </li>
+
+                            <li>
+                                Кузнецов Валерий Николаевич
+                            </li>
+
+                            <li>
+                                Букалова Алёна Юрьевна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            ИГУ
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Нечаев Ярослав Леонидович
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            Байкальский государственный университет
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Чащина Наталия Александровна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            Хакасский государственный университет
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Курыпова Дарья Сергеевна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            СПбПУ
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Смирнова Ирина Сергеевна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="about-team__organization">
+
+                        <p class="about-team__organization-title">
+                            НТИ РГУ им. Косыгина
+                        </p>
+
+                        <ul class="about-team__list">
+
+                            <li>
+                                Кургузова Дарья Константиновна
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__grid">
+
+
+            <div>
+
+                <h3 class="heading">
+                    Digital-Пульс Прикамья
+                </h3>
+
+                <p>
+                    Цифровой туристический портал экспедиции:
+                    этномедицина, маршруты, история и аудиогиды
+                    Пермского края.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Разделы
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../map/">
+                            Карта и аудиогиды
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../herbs/">
+                            Каталог трав
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../people/">
+                            Личности
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../gallery/photos/">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../about/">
+                            О проекте
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="heading">
+                    Контакты
+                </h3>
+
+                <p>
+                    Министерство туризма Пермского края
+                </p>
+
+                <p>
+                    <a href="mailto:info@digitalpuls.example">
+                        info@digitalpuls.example
+                    </a>
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="site-footer__bottom">
+
+            © 2026 Digital-Пульс Прикамья ·
+
+            <a href="../privacy/">
+                Политика конфиденциальности
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script
+    src="../js/main.js"
+    defer
+></script>
 
 
 </body>
+
 </html>
-<footer class="site-footer"><div class="container"><div class="site-footer__grid"><div><h3 class="heading">Digital-Пульс Прикамья</h3><p>Цифровой туристический портал экспедиции: этномедицина, маршруты, история и аудиогиды Пермского края.</p></div><div><h3 class="heading">Разделы</h3><ul><li><a href="../map/">Карта и аудиогиды</a></li><li><a href="../herbs/">Каталог трав</a></li><li><a href="../people/">Личности</a></li><li><a href="../gallery/photos/">Галерея</a></li><li><a href="../about/">О проекте</a></li></ul></div><div><h3 class="heading">Контакты</h3><p>Министерство туризма Пермского края</p><p><a href="mailto:info@digitalpuls.example">info@digitalpuls.example</a></p></div></div><div class="site-footer__bottom">© 2026 Digital-Пульс Прикамья · <a href="../privacy/">Политика конфиденциальности</a></div></div></footer><script src="../js/main.js" defer></script></body></html>
