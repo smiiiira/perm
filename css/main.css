@@ -665,6 +665,9 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 }
 .detail__media img { border-radius: var(--radius); width: 100%; }
 .detail__layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 32px; }
+.audio-detail h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+}
 @media (max-width: 800px) { .detail__layout { grid-template-columns: 1fr; } }
 
 .expert-comment {
